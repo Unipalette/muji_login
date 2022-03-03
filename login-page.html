@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="seung_yun">
+    <meta name="description" content="무인양품">
+    <meta name="keywords" content="무인양품,무지, MUJI">
+    <title>MUJI 무지 - 온라인 스토어</title>
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="img/favicon.svg">
+    <!-- CSS 모음 -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/login-page.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- 웹폰트 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- 모바일 화면 -->
+    <div class="mobile-wrap">
+        <div class="status_bar">
+            <img src="img/status_bar-black.svg" alt="">
+        </div>
+        <!-- gnb -->
+        <section class="gnb">
+            <a href="index.html" class="prev-btn">
+                <img src="img/icon-gnb-arrow.svg" alt="뒤로가기 버튼">
+            </a>
+            <h3 class="page-tit">
+                로그인
+            </h3>
+        </section>
+        <!-- // gnb -->
+        <!-- page-txt -->
+        <section class="page-txt">
+            모두의
+            <br>생활과 함께,
+            <br>
+            <span class="txt-red">
+                無印良品
+            </span>
+        </section>
+        <!-- // page-txt -->
+        <!-- input  -->
+        <section class="input-wrap">
+            <input type="text" class="login-input login-page-input" placeholder="아이디 또는 이메일 계정">
+            <input type="password" class="pw-input login-page-input" placeholder="비밀번호">
+            <!-- 체크 박스 -->
+            <!-- 자동 로그인 -->
+            <input type="checkbox" id="auto-login" class="check-box">
+            <label for="auto-login" class="check-box-label auto-login-label">
+                <span class="chk-box auto-login-box chk-box-active"></span>
+                자동 로그인
+            </label>
+            <!-- // 자동 로그인 -->
+
+            <!-- 아이디 저장 -->
+            <input type="checkbox" id="id-save" class="check-box">
+            <label for="id-save" class="check-box-label id-save-lable">
+                <span class="chk-box id-save-box"></span>
+                아이디 저장
+            </label>
+            <!-- // 아이디 저장 -->
+            <script>
+                const autoLogin = document.querySelector('.auto-login-label');
+                autoLogin.addEventListener('click', () => {
+                    const chkBox1 = document.querySelector('.auto-login-box');
+                    chkBox1.classList.toggle('chk-box-active');
+                })
+                const idSave = document.querySelector('.id-save-lable');
+                idSave.addEventListener('click', () => {
+                    const chkBox2 = document.querySelector('.id-save-box');
+                    chkBox2.classList.toggle('chk-box-active');
+                })
+            </script>
+            <!-- // 체크 박스 -->
+            <button class="login-btn">
+                로그인
+            </button>
+            <ul class="login-link-wrap">
+                <li class="login-link-list">
+                    <a href="#" class="login-link">
+                        아이디 찾기
+                    </a>
+                </li>
+                <li class="login-link-list">
+                    <a href="#" class="login-link">
+                        비밀번호 찾기
+                    </a>
+                </li>
+                <li class="login-link-list">
+                    <a href="#" class="login-link">
+                        회원가입
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="sns-login-wrap">
+            <h4 class="sns-login-tit">
+                소셜 로그인
+            </h4>
+            <ul class="sns-login">
+                <li class="sns-login-list">
+                    <a href="#" class="sns-login-link">
+                        <img src="img/icon-login-naver.svg" alt="네이버로 아이디로 로그인">
+                    </a>
+                </li>
+                <li class="sns-login-list">
+                    <a href="#" class="sns-login-link">
+                        <img src="img/icon-login-facebook.svg" alt="페이스북 아이디로 로그인">
+                    </a>
+                </li>
+                <li class="sns-login-list">
+                    <a href="#" class="sns-login-link">
+                        <img src="img/icon-login-kakao.svg" alt="카카오 아이디로 로그인">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <a href="#" class="not-login-info">
+            비회원 주문조회
+            <span class="icon-arrow"></span>
+        </a>
+        <!-- // input  -->
+        <footer class=" footer">
+            <div class="ftr-top-wrap">
+                <div class="ftr-top-container">
+                    <h4 class="ftr-top-tit">
+                        고객센터
+                    </h4>
+                    <div class="ftr-top-desc">
+                        평일 09:00 - 18:30
+                        <br> 점심시간 12:00 - 13:00
+                        <br>주말, 공휴일 휴무
+                    </div>
+                    <address class="address">
+                        <div class="address-wrap">
+                            <span class="icon-adr">
+                                <img src="img/icon-mail.svg" alt="">
+                            </span>
+                            <a href="muji@lotte.net">
+                                muji@lotte.net
+                            </a>
+                        </div>
+                        <div class="address-wrap">
+                            <span class="icon-adr">
+                                <img src="img/icon-call.svg" alt="">
+                            </span>
+                            <a href="#">02-2943-3204</a>
+                        </div>
+                    </address>
+                </div>
+            </div>
+            <div class="ftr-bottom-wrap">
+                <div class="ftr-bottom-container">
+                    <ul class="ftr-menu">
+                        <li class="ftr-menu-list">
+                            <a class="ftr-menu-link" href="#">
+                                회사소개
+                            </a>
+                        </li>
+                        <li class="ftr-menu-list">
+                            <a class="ftr-menu-link" href="#">
+                                이용안내
+                            </a>
+                        </li>
+                        <li class="ftr-menu-list">
+                            <a class="ftr-menu-link" href="#">
+                                이용약관
+                            </a>
+                        </li>
+                        <li class="ftr-menu-list">
+                            <a class="ftr-menu-link" href="#">
+                                <strong>
+                                    개인정보처리방침
+                                </strong>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="co-info">
+                        롯데쇼핑 주식회사 (대표이사 : 강희태 )
+                        <br>사업자등록번호 261-88-07324
+                        <br>주소 : 서울특별시 송파구 올림픽대로 300,
+                        <br>롯데월드타워 26층
+                    </p>
+                    <div class="sns-wrap">
+                        <a href="#" class="sns-link">
+                            <img src="img/icon-insta.svg" alt="">
+                        </a>
+                        <a href="#" class="sns-link">
+                            <img src="img/icon-facebook.svg" alt="">
+                        </a>
+                        <a href="#" class="sns-link">
+                            <img src="img/icon-youtube.svg" alt="">
+                        </a>
+                    </div>
+                    <p class="copy">&copy; 2021 by MUJI_korea</p>
+                </div>
+            </div>
+        </footer>
+        <!-- // 푸터 -->
+    </div>
+    <!-- // 모바일 화면 -->
+    <!-- 제이쿼리 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- 스와이퍼 슬라이드 -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>
